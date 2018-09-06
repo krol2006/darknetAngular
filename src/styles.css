@@ -1,0 +1,493 @@
+@font-face {
+  font-family: "Avenir";
+  src: url('/assets/fonts/AVENIRNEXTCYR-REGULAR.OTF');
+}
+
+@font-face {
+  font-family: "AvenirBold";
+  src: url('/assets/fonts/AVENIRNEXTCYR-BOLD_0.OTF');
+}
+
+@font-face {
+  font-family: "AvenirLight";
+  src: url('/assets/fonts/AVENIRNEXTCYR-LIGHT_0.OTF');
+}
+
+@font-face {
+  font-family: "AvenirDemi";
+  src: url('/assets/fonts/AVENIRNEXTCYR-DEMI_0.OTF');
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+html, body {
+  max-width: 100%;
+  min-width: 640px;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  position: relative;
+  font-family: "Avenir", sans-serif;
+  line-height: 1;
+}
+iframe {
+  border: 0;
+}
+main {
+  display: block;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+li {
+  display: block;
+}
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+dd {
+  margin-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+sup {
+  position: relative;
+  top: -.5em;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+strong {
+  font-weight: bold;
+}
+figure {
+  margin: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus {
+  outline: none;
+}
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  overflow: visible;
+}
+button,
+[type="text"],
+[type="password"],
+[type="submit"],
+[type="search"],
+textarea {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+[data-modal-open] {
+  cursor: pointer;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.helper {
+  background-color: #000911;
+  max-width: 100%;
+}
+
+.container {
+  width: 1325px;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.button {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 0;
+  cursor: pointer;
+  text-indent: 1px;
+  letter-spacing: .9px;
+}
+
+.button:hover {
+  -webkit-filter: brightness(130%);
+  filter: brightness(130%);
+}
+
+.button--s0 {
+  height: 37px;
+  padding: 0 30px;
+  font: bold 12px "AvenirBold", sans-serif;
+  line-height: 37px;
+}
+
+.button--sp1 {
+  height: 58px;
+  font: 14px "Avenir", sans-serif;
+  width: 127px;
+  margin-top: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.button--sp2 {
+  height: 58px;
+  min-width: 127px;
+  font: bold 14px "AvenirBold", sans-serif;
+  padding: 0 36px;
+  display: inline-block;
+  line-height: 58px;
+}
+
+.button--t1 {
+  background-color: #0082ff;
+  color: #fff;
+}
+
+.button--t2 {
+  background-color: #39b304;
+  color: #fff;
+  -webkit-box-shadow: 2px 2px 14px -3px #3cbc05;
+  box-shadow: 2px 2px 14px -3px #3cbc05;
+}
+
+main:not(.main){
+  background: #03193C url(assets/images/main_bg.png) no-repeat;
+  background-size: 100% auto;
+  min-height: 779px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------*/
+/*----------------HEADER-----------------*/
+/*---------------------------------------*/
+.header {
+  height: 91px;
+  background: #000911;
+}
+
+.header__layout {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  max-width: 174px;
+}
+
+.header__main {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.header__main > * {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/*---------------------------------------*/
+/*----------------FOOTER-----------------*/
+/*---------------------------------------*/
+
+.footer {
+  padding-top: 90px;
+  overflow: hidden;
+  height: 383px;
+  background: #000911;
+  box-sizing: border-box;
+}
+
+.footer__layout {
+   width: 1100px;
+   margin: 0 auto;
+}
+
+.footer__copy {
+  margin: 32px 0 90px;
+  color: #fff;
+  font: 11px "AvenirUltraLight", sans-serif;
+  letter-spacing: 1px;
+}
+
+/*--------------------------------------*/
+/*----------------FORMS-----------------*/
+/*--------------------------------------*/
+
+.form__input {
+  margin-bottom: 10px;
+}
+
+.form__input label {
+  display: none;
+}
+
+.form__captcha {
+  text-align: center;
+  background: url(assets/images/captcha_bg.png) no-repeat;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 80px;
+}
+
+.form__captcha > * {
+  max-height: 100%;
+}
+
+.form__input--captcha a {
+  position: absolute;
+  right: 0;
+  top: 90px;
+  display: inline-block;
+  width: 20px;
+  height: 37px;
+  margin-right: 17px;
+  /*background: url(../img/registration/refresh_bg.png) center center no-repeat;*/
+  float: right;
+  text-indent: -9999px;
+}
+
+.form__input label a {
+  text-decoration: underline;
+}
+
+.form__input--text input, .form__input--password input, .form__input--email input, .form__input--tel input, .form__input--textarea textarea, .modal-register__form_field, .modal-voucher__field, .modal-name__field, .buy__sum_form_field, .buy__address_form_field, .contact__form_field, .contact__form_textarea, .enter__form_field, .bills__transfer_field, .questions__form_field, .registration__form_field, .withdraw__form_field {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 37px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Avenir", sans-serif;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  padding-left: 23px;
+}
+
+.form--registration .form__section--submit > *, .form--sign-in .form__section--submit > * {
+  min-width: 100%;
+}
+
+.form__input--checkbox {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+[type="checkbox"] {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+[type="checkbox"] + label {
+  padding-left: 23px;
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 15px;
+}
+
+.form__input--checkbox input {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+[type="checkbox"] + label::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 13px;
+  background: url(assets/images/checkbox_bg.png) 0 0 no-repeat;
+  position: absolute;
+  left: 0;
+}
+
+[type="checkbox"]:checked + label::before {
+  background-position: 0 -13px;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, .5);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Avenir", sans-serif;
+}
+
+/*----------------------------------------*/
+/*--------------TEXT PAGE-----------------*/
+/*----------------------------------------*/
+.text {
+  position: relative;
+}
+
+.title-fourth {
+  height: 284px;
+  background: #051937;
+  font: bold 45px "AvenirBold", sans-serif;
+  text-align: center;
+  text-transform: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.title-fourth .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title-back {
+  color: #fff;
+  font: 12px "Avenir", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-left: 20px;
+  background: url(assets/images/back_bg.png) left center no-repeat;
+}
+
+.text__layout {
+  max-width: 652px;
+  font: 16px "Myriad Pro Semibold", sans-serif;
+  position: relative;
+  top: -250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text__title {
+  font: bold 45px "AvenirBold", sans-serif;
+  margin-bottom: 45px;
+  line-height: 1;
+}
+
+.text__layout p {
+  margin-bottom: 27px;
+}

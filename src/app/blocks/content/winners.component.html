@@ -1,0 +1,59 @@
+<div class="winners">
+    <div class="winners__panel">
+        <div class="container">
+            <ul class="winners__panel_list">
+                <li class="winners__panel_item">
+                    <a href="#">
+                        <img src="../../../assets/images/winners_latest_img.png" alt="Последние победители">
+                        <p class="winners__panel_text">Последние победители</p>
+                    </a>
+                </li>
+                <li class="winners__panel_item">
+                    <a href="#">
+                        <img src="../../../assets/images/winners_latest_img.png" alt="Последние победители">
+                        <p class="winners__panel_text">Последние победители</p>
+                    </a>
+                </li>
+                <li class="winners__panel_item">
+                    <a href="#">
+                        <img src="../../../assets/images/winners_latest_img.png" alt="Последние победители">
+                        <p class="winners__panel_text">Последние победители</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="winners__item">
+                <ul class="winners__list">
+                    <li *ngFor="let winner of winners | slice:0:5;" class="winners__list_item">
+                        <img src="../../../assets/images/{{winner.imageUrl}}" class="winners__item_image" alt="{{winner.name}}">
+                        <p class="winners__list_item_name">{{winner.name}}</p>
+                        <p class="winners__item_currency">{{winner.currency}}</p>
+                        <p class="winners__item_amount">{{winner.amount}}</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="winners__item">
+                <ul class="winners__list">
+                    <li *ngFor="let winner of winners | slice:5:10;" class="winners__list_item">
+                        <img src="../../../assets/images/{{winner.imageUrl}}" class="winners__item_image" alt="{{winner.name}}">
+                        <p class="winners__list_item_name">{{winner.name}}</p>
+                        <p class="winners__item_currency">{{winner.currency}}</p>
+                        <p class="winners__item_amount">{{winner.amount}}</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="winners__item">
+                <ul class="winners__list">
+                    <li *ngFor="let winner of winners | slice:10:15" class="winners__list_item">
+                        <img src="../../../assets/images/{{winner.imageUrl}}" class="winners__item_image" alt="{{winner.name}}">
+                        <p class="winners__list_item_name">{{winner.name}}</p>
+                        <p class="winners__item_currency">{{winner.currency}}</p>
+                        <p class="winners__item_amount">{{winner.amount}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

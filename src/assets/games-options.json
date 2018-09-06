@@ -1,0 +1,40 @@
+[
+  {
+    "name":"new",
+    "url":"/new"
+  },
+  {
+    "name":"recommended",
+    "url":"/recommended"
+  },
+  {
+    "name":"популярные",
+    "url":"/popular"
+  },
+  {
+    "name":"провайдер",
+    "url":"/provider",
+    "hasmenu": [
+      {
+        "name":"TomHorn",
+        "url": "/tomhorn"
+      },
+      {
+        "name":"Endorphina",
+        "url":"/endorphina"
+      },
+      {
+        "name":"XProGaming",
+        "url":"/xprogaming"
+      },
+      {
+        "name":"GameArt",
+        "url":"/gameart"
+      },
+      {
+        "name":"Amatic",
+        "url":"/amatic"
+      }
+    ]
+  }
+]

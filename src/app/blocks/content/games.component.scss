@@ -1,0 +1,133 @@
+.games {
+  &__content {
+    position: relative;
+
+    &::after, &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      display: block;
+      width: 348px;
+      box-sizing: border-box;
+      height: 100%;
+      border-left: 1px solid #192027;
+      border-right: 1px solid #192027;
+      top: 115px;
+    }
+
+    &::after {
+      left: 143px;
+    }
+
+    &::before {
+      right: 143px;
+    }
+  }
+
+  &__block {
+    &_title {
+      margin: 25px 0 60px;
+      text-align: center;
+      font: bold 45px "AvenirBold", sans-serif;;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      text-indent: -3px;
+      position: relative;
+      z-index: 5;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+
+    &_image_container {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &_item {
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      flex: 0 1 287px;
+      min-height: 193px;
+      margin-bottom: 51px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75);
+
+      &_name {
+        position: absolute;
+        z-index: 2;
+        font: bold 14px "AvenirDemi", sans-serif;;
+        height: 100px;
+        background: linear-gradient(to bottom, transparent 0%, #02376b 100%);
+        bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        text-align: center;
+        text-indent: 2.5px;
+        box-sizing: border-box;
+        padding-top: 65px;
+        width: 100%;
+      }
+
+      &:hover .games__list_overlay {
+        opacity: 1;
+        visibility: visible;
+        transition: all .2s ease-out;
+      }
+
+      &:hover &_name {
+        display: none;
+      }
+    }
+
+    &_overlay {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      background: rgba(2, 55, 107, .9);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 3;
+      opacity: 0;
+      visibility: hidden;
+
+      > * {
+        white-space: normal;
+      }
+    }
+
+    &_info {
+      text-decoration: underline;
+      font: 14px "Avenir", sans-serif;;
+      letter-spacing: 1px;
+      margin-top: 16px;
+      white-space: nowrap;
+      max-width: 100% !important;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &_add_link {
+      text-decoration: underline;
+      font-size: 12px;
+      margin-top: 16px;
+      letter-spacing: 1px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

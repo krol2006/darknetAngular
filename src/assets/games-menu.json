@@ -1,0 +1,26 @@
+[
+  {
+    "name": "all games",
+    "url": "/all-games"
+  },
+  {
+    "name": "roulette",
+    "url": "/roulette"
+  },
+  {
+    "name": "lotteries",
+    "url": "/lotteries"
+  },
+  {
+    "name": "slots",
+    "url": "/slots"
+  },
+  {
+    "name": "cards",
+    "url": "/cards"
+  },
+  {
+    "name": "poker",
+    "url": "/poker"
+  }
+]

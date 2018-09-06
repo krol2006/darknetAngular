@@ -1,0 +1,178 @@
+{
+  "popular": [
+    {
+      "id": "2749",
+      "name": "2016 gladiators",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2749",
+      "imageUrl": "gladiators.png",
+      "demo": true
+    },
+    {
+      "id": "2750",
+      "name": "4 of a king",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2750",
+      "imageUrl": "4ofaking.png",
+      "demo": true
+    },
+    {
+      "id": "2933",
+      "name": "7 mirrors",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2933",
+      "imageUrl": "7mirrors.png",
+      "demo": true
+    },
+    {
+      "id": "2916",
+      "name": "aces and faces mega poker",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2916",
+      "imageUrl": "acesandfaces.png",
+      "demo": true
+    },
+    {
+      "id": "2188",
+      "name": "admiral",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/redirectGame/2188/real",
+      "imageUrl": "admiral.jpg",
+      "demo": false
+    },
+    {
+      "id": "2951",
+      "name": "alladin's lamp",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2951",
+      "imageUrl": "alladin's.png",
+      "demo": true
+    },
+    {
+      "id": "2189",
+      "name": "always fruits",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/redirectGame/2189/real",
+      "imageUrl": "fruits.jpg",
+      "demo": false
+    },
+    {
+      "id": "2975",
+      "name": "baccarat",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2975",
+      "imageUrl": "baccarat.png",
+      "demo": true
+    }
+  ],
+
+  "new": [
+    {
+      "id": "2933",
+      "name": "7 mirrors",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2933",
+      "imageUrl": "7mirrors.png",
+      "demo": true
+    },
+    {
+      "id": "2749",
+      "name": "2016 gladiators",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2749",
+      "imageUrl": "gladiators.png",
+      "demo": true
+    },
+    {
+      "id": "2916",
+      "name": "aces and faces mega poker",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2916",
+      "imageUrl": "acesandfaces.png",
+      "demo": true
+    },
+    {
+      "id": "2188",
+      "name": "admiral",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/redirectGame/2188/real",
+      "imageUrl": "admiral.jpg",
+      "demo": false
+    },
+    {
+      "id": "2750",
+      "name": "4 of a king",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2750",
+      "imageUrl": "4ofaking.png",
+      "demo": true
+    },
+    {
+      "id": "2951",
+      "name": "alladin's lamp",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2951",
+      "imageUrl": "alladin's.png",
+      "demo": true
+    },
+    {
+      "id": "2975",
+      "name": "baccarat",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2975",
+      "imageUrl": "baccarat.png",
+      "demo": true
+    },
+    {
+      "id": "2189",
+      "name": "always fruits",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/redirectGame/2189/real",
+      "imageUrl": "fruits.jpg",
+      "demo": false
+    }
+  ],
+
+  "recommended": [
+    {
+      "id": "2933",
+      "name": "7 mirrors",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2933",
+      "imageUrl": "7mirrors.png",
+      "demo": true
+    },
+    {
+      "id": "2749",
+      "name": "2016 gladiators",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2749",
+      "imageUrl": "gladiators.png",
+      "demo": true
+    },
+    {
+      "id": "2916",
+      "name": "aces and faces mega poker",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2916",
+      "imageUrl": "acesandfaces.png",
+      "demo": true
+    },
+    {
+      "id": "2188",
+      "name": "admiral",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/redirectGame/2188/real",
+      "imageUrl": "admiral.jpg",
+      "demo": false
+    },
+    {
+      "id": "2750",
+      "name": "4 of a king",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2750",
+      "imageUrl": "4ofaking.png",
+      "demo": true
+    },
+    {
+      "id": "2951",
+      "name": "alladin's lamp",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2951",
+      "imageUrl": "alladin's.png",
+      "demo": true
+    },
+    {
+      "id": "2975",
+      "name": "baccarat",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/demoGame/2975",
+      "imageUrl": "baccarat.png",
+      "demo": true
+    },
+    {
+      "id": "2189",
+      "name": "always fruits",
+      "url": "http://darknet.d6.dev.devcaz.com/ru/game/redirectGame/2189/real",
+      "imageUrl": "fruits.jpg",
+      "demo": false
+    }
+  ]
+}

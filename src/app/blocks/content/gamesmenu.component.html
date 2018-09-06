@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="games__menu">
+        <ul class="games__menu_list">
+            <li class="games__menu_item" *ngFor="let gameMenuItem of gamesMenu">
+                <a class="games__menu_link" href="{{gameMenuItem.url}}">{{gameMenuItem.name}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

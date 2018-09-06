@@ -1,0 +1,172 @@
+/*----------------------------------------*/
+/*-----------------WINNERS----------------*/
+/*----------------------------------------*/
+
+.winners {
+  margin-top: 110px;
+
+  .ui-tabs .ui-tabs-panel {
+    background: white;
+    padding: 18px 28px;
+  }
+
+  .ui-tabs .ui-tabs-nav {
+    padding: 0;
+
+    li {
+      margin-top: -1px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__panel {
+    position: relative;
+    z-index: 5;
+
+    .container {
+      text-align: justify;
+      padding-top: 0;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        text-align: justify;
+      }
+    }
+
+
+    &::before {
+      content: "";
+      height: 158px;
+      background: #051937;
+      display: block;
+      width: 100%;
+      position: absolute;
+      z-index: 0;
+    }
+
+    &_list {
+      height: 158px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    &_item {
+      text-align: center;
+      max-width: 170px;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 0 1 170px;
+
+      &:first-of-type, &:last-of-type {
+        display: none;
+      }
+    }
+
+    &_text {
+      font: bold 16px "AvenirDemi", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    &_image {
+      vertical-align: top;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__layout {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+
+    &::after, &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      display: block;
+      width: 336px;
+      box-sizing: border-box;
+      height: 100%;
+      //border-left: 1px solid $linesBG;
+      //border-right: 1px solid $linesBG;
+      top: 115px;
+    }
+
+    &::after {
+      left: 157px;
+    }
+
+    &::before {
+      right: 157px;
+    }
+  }
+
+  &__item {
+    max-width: 424px;
+    flex: 0 0 424px;
+    min-width: 424px;
+    box-sizing: border-box;
+    padding: 18px 28px;
+    background: #f7f7f7;
+    position: relative;
+    z-index: 6;
+    display: inline-block;
+    vertical-align: top;
+
+    &_currency {
+      font: bold 14px "AvenirBold", sans-serif;
+      color: white;
+      box-sizing: border-box;
+      height: 24px;
+      display: inline-block;
+      background: #39b304;
+      padding: 0 5px;
+      border-radius: 5px;
+      margin-left: 28px;
+      line-height: 24px;
+    }
+
+    &_amount {
+      color: #000911;
+      font: bold 16px "AvenirBold", sans-serif;
+      margin-left: 27px;
+    }
+  }
+
+  &__list {
+    &_item {
+      box-sizing: border-box;
+      height: 99px;
+      border-bottom: 1px solid #dddfe2;
+      display: flex;
+      align-items: center;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      &_name {
+        color: #000810;
+        font-size: 14px;
+        margin-left: 25px;
+        max-width: 60px;
+        min-width: 60px;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+
+  &__item_image {
+    max-width: 83px;
+    border-radius: 5px;
+  }
+}

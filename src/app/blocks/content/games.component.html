@@ -1,0 +1,77 @@
+<div class="games">
+    <div class="container">
+        <div class="games__content">
+            <div class="games__block">
+                <div class="games__block_title">
+                    <p>Популярные игры</p>
+                </div>
+
+                <ul class="games__list">
+                    <li class="games__list_item" *ngFor="let game of games.popular">
+                        <div class="games__list_image_container">
+                            <img src="../../../assets/images/games/{{game.imageUrl}}" alt="{{game.name}}">
+                        </div>
+
+                        <div class="games__list_item_name">
+                            <p>{{game.name}}</p>
+                        </div>
+
+                        <div class="games__list_overlay">
+                            <a href="#" class="button button--sp1 button--t2">Игра на деньги</a>
+                            <a *ngIf="game.demo" href="{{game.url}}" class="button button--sp1 button--t1 button--wrap">Демо игра</a>
+                            <a class="games__list_info" [routerLink]="['/game', game.id]">Информация об игре</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="games__block">
+                <div class="games__block_title">
+                    <p>Новые игры</p>
+                </div>
+
+                <ul class="games__list">
+                    <li class="games__list_item" *ngFor="let game of games.new">
+                        <div class="games__list_image_container">
+                            <img src="../../../assets/images/games/{{game.imageUrl}}" alt="{{game.name}}">
+                        </div>
+
+                        <div class="games__list_item_name">
+                            <p>{{game.name}}</p>
+                        </div>
+
+                        <div class="games__list_overlay">
+                            <a href="#" class="button button--sp1 button--t2">Игра на деньги</a>
+                            <a *ngIf="game.demo" href="{{game.url}}" class="button button--sp1 button--t1 button--wrap">Демо игра</a>
+                            <a class="games__list_info" [routerLink]="['/game', game.id]">Информация об игре</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        <div class="games__block">
+        <div class="games__block_title">
+        <p>Рекомендуемые игры</p>
+        </div>
+
+        <ul class="games__list">
+        <li class="games__list_item" *ngFor="let game of games.recommended">
+        <div class="games__list_image_container">
+        <img src="../../../assets/images/games/{{game.imageUrl}}" alt="{{game.name}}">
+        </div>
+
+        <div class="games__list_item_name">
+        <p>{{game.name}}</p>
+        </div>
+
+        <div class="games__list_overlay">
+        <a href="#" class="button button--sp1 button--t2">Игра на деньги</a>
+        <a *ngIf="game.demo" href="{{game.url}}" class="button button--sp1 button--t1 button--wrap">Демо игра</a>
+        <a class="games__list_info" [routerLink]="['/game', game.id]">Информация об игре</a>
+        </div>
+        </li>
+        </ul>
+        </div>
+        </div>
+    </div>
+</div>

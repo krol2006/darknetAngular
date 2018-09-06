@@ -1,0 +1,21 @@
+<div class="slider">
+    <div *ngFor="let slide of slider">
+        <div class="slider__image">
+            <img src="../../../assets/images/{{slide.image}}" alt="image">
+        </div>
+
+        <div class="slider__content">
+            <div class="slider__text">
+                <p>{{slide.text}}</p>
+            </div>
+
+            <div class="slider__subtext">
+                <p>{{slide.subtext}}</p>
+            </div>
+
+            <div class="slider__buttons">
+                <a href="#" class="button button--sp2 button--t2">{{slide.btnText}}</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "почему darknet?",
+    "url": "/info"
+  },
+  {
+    "name": "faq",
+    "url": "/faq"
+  },
+  {
+    "name": "контакты",
+    "url": "/help"
+  },
+  {
+    "name": "все игры",
+    "url": "/gameList"
+  },
+  {
+    "name": "бонусы",
+    "url": "/bonusList"
+  }
+]

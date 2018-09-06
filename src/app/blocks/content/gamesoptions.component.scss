@@ -1,0 +1,109 @@
+.games {
+  &__options {
+    height: 115px;
+    background: #051937;
+    margin-bottom: 65px;
+
+    .container {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: flex-end;
+      padding-top: 35px;
+      padding-right: 80px;
+    }
+
+    &_list {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      margin-right: 15px;
+    }
+
+    &_item {
+      margin: 0 30px;
+      position: relative;
+
+      &_list {
+        display: none;
+        width: 100%;
+        position: absolute;
+        background: linear-gradient(to bottom, #051937 0%, #000a12 100%);
+        padding: 10px 0;
+        min-width: 180px;
+        box-sizing: border-box;
+        right: 0;
+        z-index: 1000;
+        margin-top: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+
+        &::before {
+          content: "";
+          display: block;
+          height: 5px;
+          background: transparent;
+          width: 100%;
+          top: -5px;
+          position: absolute;
+        }
+
+        &:hover {
+          display: block;
+        }
+
+        &_item {
+          height: 30px;
+          padding-left: 0;
+          text-align: center;
+
+          > * {
+            display: block;
+            height: 100%;
+            font-size: 14px;
+            font-family: "AvenirLight", sans-serif;;
+            line-height: 30px;
+          }
+
+          &:hover {
+            background: #354356;
+          }
+        }
+      }
+
+      &:hover &_list {
+        display: block;
+      }
+    }
+
+    &_link {
+      color: #9d9da7;
+      font-size: 12px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      letter-spacing: 2px;
+
+      &.hasmenu {
+        background: url(../../../assets/images/arrow_bg.png) right center no-repeat;
+        padding-right: 25px;
+        user-select: none;
+      }
+    }
+  }
+}
+
+.allgames__form_field {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #484855;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 32px;
+  color: #d7d7e3;
+  font: 12px "Avenir", sans-serif;
+  padding-left: 6px;
+  min-width: 198px;
+  text-transform: uppercase;
+  line-height: 32px;
+}

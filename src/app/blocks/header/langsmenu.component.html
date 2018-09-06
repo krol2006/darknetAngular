@@ -1,0 +1,9 @@
+<div class="header__langs">
+    <button class="header__langs_current">ru</button>
+
+    <ul class="header__langs_list">
+        <li class="header__list_item" *ngFor="let lang of langsMenu">
+            <a href="{{lang.url}}" class="header__langs_link">{{lang.name}}</a>
+        </li>
+    </ul>
+</div>

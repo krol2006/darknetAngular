@@ -1,0 +1,20 @@
+<div class="games__options">
+    <div class="container">
+        <ul class="games__options_list">
+            <li class="games__options_item" *ngFor="let gameOption of gamesOptions">
+                <a *ngIf="!gameOption.hasmenu" href="{{gameOption.url}}" class="games__options_link">{{gameOption.name}}</a>
+
+                <a *ngIf="gameOption.hasmenu" href="{{gameOption.url}}" class="games__options_link hasmenu">{{gameOption.name}}</a>
+                <ul *ngIf="gameOption.hasmenu" class="games__options_item_list">
+                    <li *ngFor="let sub of gameOption.hasmenu" class="games__options_item_list_item">
+                        <a href="{{sub.url}}">{{sub.name}}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <form method="get" action="/ru/site/gameList" class="allgames__form">
+            <input name="game_name" type="search" class="allgames__form_field" placeholder="Поиск">
+            <button type="submit" style="display: none;"></button>
+        </form>
+    </div>
+</div>
